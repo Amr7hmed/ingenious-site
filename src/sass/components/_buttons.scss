@@ -1,0 +1,63 @@
+.main-btn {
+  color: $main-color;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  transition: 0.4s;
+  display: inline-block;
+  &::before {
+    content: "";
+    background-color: #f6f8f9;
+    z-index: -1;
+    position: absolute;
+    inset: 1px;
+    transition: 0.4s;
+    padding: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $main-color;
+    z-index: -2;
+    inset: -6px;
+    transform: rotate(13deg);
+    margin: 10px 0;
+    transition: 1s;
+  }
+  &:hover {
+    color: $white;
+    &::before {
+      background-color: $main-color;
+    }
+    &::after {
+      transform: rotate(165deg);
+    }
+  }
+}
+
+.main-btn--bg {
+  color: $white;
+  &::before {
+    background-color: $secnd-color;
+  }
+  &::after {
+    background-color: $main-color;
+  }
+}
+
+.main-btn--bg-main {
+  z-index: 2;
+  color: $white;
+  &::before {
+    background-color: $secnd-color;
+  }
+  &::after {
+    background-color: $white;
+    inset: -1px;
+    transform: rotate(5deg);
+  }
+}

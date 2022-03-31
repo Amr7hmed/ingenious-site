@@ -1,0 +1,36 @@
+// Reset Tags
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  border-color: $main-color !important;
+}
+/* Start Global Style */
+.main-color {
+  color: $main-color;
+}
+
+.secnd-color {
+  color: $secnd-color;
+}
+
+.main-bg {
+  background-color: $main-color;
+  color: $white;
+}
+/* [dir="rtl"] */

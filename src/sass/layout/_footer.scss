@@ -1,0 +1,73 @@
+.main-footer {
+  background-color: #022c40;
+  color: $white;
+  .footer-title {
+    color: $white;
+  }
+  .footer__form {
+    .btn {
+      color: $white;
+      background-color: $main-color;
+      &:hover {
+        background-color: $secnd-color;
+      }
+    }
+  }
+
+  .payment-icons {
+    .payment-icon {
+      color: $white;
+      font-size: 35px;
+      margin-right: 10px;
+    }
+  }
+
+  .footer__sochail {
+    .footer__sochail-icon {
+      .fa {
+        background-color: #13435a;
+        color: $white;
+        display: block;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        line-height: 33px;
+        transition: 0.3s;
+        &.fa-behance:hover {
+          background-color: #1769ff;
+        }
+        &.fa-vimeo:hover {
+          background-color: #1ab7ea;
+        }
+        &.fa-facebook-f:hover {
+          background-color: #1877f2;
+        }
+        &.fa-youtube-play:hover {
+          background-color: #ff0000;
+        }
+        &.fa-twitter:hover {
+          background-color: #1da1f2;
+        }
+      }
+    }
+  }
+
+  .footer__link {
+    margin-bottom: 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    &:hover {
+      padding: 0 10px;
+      a {
+        opacity: 0.8;
+      }
+    }
+    a {
+      color: $white;
+      display: block;
+      width: 100%;
+      transition: 0.3s;
+    }
+  }
+}

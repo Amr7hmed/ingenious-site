@@ -1,0 +1,40 @@
+.slick-dots {
+  all: unset;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  li {
+    transition: 0.4s;
+
+    button {
+      all: unset;
+      color: transparent;
+      position: relative;
+      &:before {
+        all: unset;
+        content: "";
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        left: 0;
+        transition: 0.4s;
+        background-color: #98b0bb;
+      }
+    }
+    &.slick-active {
+      width: 30px;
+      button {
+        &:before {
+          background-color: $secnd-color;
+          border-radius: 10px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
